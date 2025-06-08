@@ -44,9 +44,18 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             <div className="ml-3 relative">
-              <button className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+              <Link 
+                href="/customers/new" 
+                className="mr-2 bg-white hover:bg-gray-50 text-primary-600 border border-primary-500 px-4 py-2 rounded-md text-sm font-medium"
+              >
+                New Customer
+              </Link>
+              <Link 
+                href="/bookings/new-group" 
+                className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium"
+              >
                 New Booking
-              </button>
+              </Link>
             </div>
           </div>
         </div>
